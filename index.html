@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>الديف أوبس من الصفر للإنتاج</title>
+  <meta name="description" content="الديف أوبس مش أداة واحدة، دي طريقة شغل كاملة بتوصل الكود من جهاز المبرمج لبيئة الإنتاج بسرعة وأمان ومن غير تدخل يدوي متكرر." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="card">
+    <header>
+      <h1>الديف أوبس من الصفر للإنتاج</h1>
+      <p class="fact">دليل عملي بالعربي</p>
+      <p class="intro">الديف أوبس مش أداة واحدة، دي طريقة شغل كاملة بتوصل الكود من جهاز المبرمج لبيئة الإنتاج بسرعة وأمان ومن غير تدخل يدوي متكرر.</p>
+    </header>
+
+    <figure class="hero">
+      <img src="devops-hero.png" alt="رسم توضيحي لخط تسليم برمجي: حاويات تتحرك من جهاز المبرمج إلى السحابة والسيرفرات" />
+      <figcaption>رسم توضيحي، مش صورة لنظام حقيقي.</figcaption>
+    </figure>
+
+    <section>
+      <p class="section-label">الفكرة</p>
+      <h2>إيه هو الديف أوبس؟</h2>
+      <p>كلمة <bdi>DevOps</bdi> جاية من دمج <bdi>Development</bdi> و <bdi>Operations</bdi>. قبلها، فريق التطوير كان بيكتب الكود ويرميه لفريق التشغيل يشغله، وكل فريق بيلوم التاني لما حاجة تقع. الديف أوبس بيكسر الحيطة دي: فريق واحد مسؤول عن الكود من أول سطر لحد ما يشتغل قدام المستخدمين.</p>
+      <p>عملياً ده يعني أتمتة كل خطوة ممكنة: البناء، الاختبار، النشر، والمراقبة. الهدف إن التعديل يوصل للإنتاج في دقايق بدل أسابيع، وإن الرجوع لإصدار سابق يكون ضغطة زرار لو حصلت مشكلة.</p>
+      <p class="key-sentence">القاعدة الذهبية: أي خطوة بتتعمل بإيدك أكتر من مرة، اتعلم إزاي تعملها أوتوماتيك.</p>
+    </section>
+
+    <section>
+      <p class="section-label">المسار</p>
+      <h2>رحلة الكود من الـ commit للإنتاج</h2>
+      <ol class="steps">
+        <li>المبرمج يرفع الكود على مستودع <bdi>Git</bdi> مشترك.</li>
+        <li>نظام الـ <bdi>CI</bdi> يبني الكود ويشغل الاختبارات تلقائياً مع كل تغيير.</li>
+        <li>لو الاختبارات نجحت، يتبنى إصدار جاهز للتشغيل، غالباً صورة حاوية.</li>
+        <li>الـ <bdi>CD</bdi> ينشر الإصدار على بيئة الإنتاج أو بيئة تجريبية أولاً.</li>
+        <li>المراقبة تتابع الخدمة بعد النشر وتنبهك لأي مشكلة.</li>
+      </ol>
+    </section>
+
+    <section>
+      <p class="section-label">العدة</p>
+      <h2>الأدوات الأساسية</h2>
+      <ul class="tools">
+        <li>
+          <span class="tool-num">1</span>
+          <div>
+            <h3>Docker</h3>
+            <p>يغلف التطبيق وكل متطلباته في حاوية واحدة تشتغل بنفس الشكل على أي جهاز.</p>
+          </div>
+        </li>
+        <li>
+          <span class="tool-num">2</span>
+          <div>
+            <h3>Kubernetes</h3>
+            <p>ينظم الحاويات على مجموعة سيرفرات: توزيع، إعادة تشغيل عند الفشل، وتوسيع حسب الحمل.</p>
+          </div>
+        </li>
+        <li>
+          <span class="tool-num">3</span>
+          <div>
+            <h3>GitHub Actions و Jenkins</h3>
+            <p>محركات الـ <bdi>CI/CD</bdi> اللي بتنفذ خطوات البناء والاختبار والنشر تلقائياً.</p>
+          </div>
+        </li>
+        <li>
+          <span class="tool-num">4</span>
+          <div>
+            <h3>Terraform و Ansible</h3>
+            <p>البنية التحتية ككود: توصف السيرفرات والشبكات في ملفات قابلة للتكرار والمراجعة.</p>
+          </div>
+        </li>
+        <li>
+          <span class="tool-num">5</span>
+          <div>
+            <h3>Prometheus و Grafana</h3>
+            <p>جمع المقاييس من الخدمات وعرضها في لوحات متابعة مع تنبيهات عند تجاوز الحدود.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="callout">
+      <p class="section-label">نقطة مهمة</p>
+      <h3>الأداة مش هي الهدف</h3>
+      <p>ناس كتير بتبدأ بتعلم <bdi>Kubernetes</bdi> قبل ما تفهم ليه الحاويات ظهرت أصلاً. ابدأ بالمشكلة اللي قدامك، واختار الأداة اللي بتحلها، مش العكس.</p>
+    </section>
+
+    <section>
+      <p class="section-label">خطة عملية</p>
+      <h2>تبدأ منين؟</h2>
+      <ol class="steps">
+        <li>اتعلم <bdi>Linux</bdi> وسطر الأوامر كويس، ده أساس كل حاجة بعدها.</li>
+        <li>اتمرن على <bdi>Git</bdi> واشتغل بفكرة الفروع والمراجعة.</li>
+        <li>اكتب أول <bdi>Dockerfile</bdi> لتطبيق صغير تعرفه، وشغله محلياً.</li>
+        <li>اعمل <bdi>pipeline</bdi> بسيط على <bdi>GitHub Actions</bdi> يبني ويختبر مع كل <bdi>push</bdi>.</li>
+        <li>جرب <bdi>Kubernetes</bdi> على جهازك بـ <bdi>Minikube</bdi> أو <bdi>kind</bdi> قبل ما تروح لسيرفرات حقيقية.</li>
+        <li>اربط كل خدمة تشغلها بمراقبة من أول يوم، حتى لو لوحة <bdi>Grafana</bdi> بسيطة.</li>
+      </ol>
+      <p>لما توصل للخطوة الأخيرة، هتلاقي إنك عديت على نفس الرحلة اللي الصفحة دي وصفتها: كود، بناء، اختبار، حاوية، نشر، ومراقبة. ساعتها ممكن تدور على شهادة زي <bdi>CKA</bdi> أو تساهم في مشروع مفتوح المصدر عشان تثبت خبرتك.</p>
+    </section>
+
+    <footer>
+      <p>أُعدت يوم ٢٢ نوفمبر ٢٠٢٦. المحتوى تعليمي عام ومش مرتبط بإصدار معين من أي أداة.</p>
+    </footer>
+  </main>
+</body>
+</html>
